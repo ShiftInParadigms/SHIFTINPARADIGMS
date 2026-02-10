@@ -1,0 +1,774 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses &amp; Books - SHIFT IN PARADIGMS</title>
+    <meta name="description" content="Discover courses and books about escaping the matrix and shifting your paradigm.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/layout-fixes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <style>
+        /* Specific image scaling fixes for courses page */
+        .featured-product-image {
+            max-height: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .featured-product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-height: 400px;
+        }
+        
+        .product-image {
+            height: 220px;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .bundle-image {
+            max-height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .bundle-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-height: 350px;
+        }
+        
+        /* Product grid layout improvements */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .product-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: rgba(30, 30, 60, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-description {
+            flex-grow: 1;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cosmic Particles Background -->
+    <div class="cosmic-particles"></div>
+    
+    <!-- Static Layer -->
+    <div class="cosmic-static"></div>
+    
+    <!-- Animated Layer -->
+    <div class="cosmic-animated"></div>
+    
+    <!-- Sacred Geometry Elements -->
+    <div class="sacred-geometry top-left"></div>
+    <div class="sacred-geometry bottom-right"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="SHIFT IN PARADIGMS Logo">
+                    <span class="logo-text">SHIFT IN PARADIGMS</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="vlog.html" class="nav-link">Vlog</a></li>
+                    <li class="nav-item"><a href="courses.html" class="nav-link active">Courses &amp; Books</a></li>
+                    <li class="nav-item"><a href="forum.html" class="nav-link">Community</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link auth-link">Login</a></li>
+                    <li class="nav-item">
+                        <div class="user-menu" style="display: none;">
+                            <a href="account.html" class="nav-link">
+                                <span class="user-name">User</span>
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link cart-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Courses &amp; Books</h1>
+            <p>Transform your reality with our mystical and ethereal knowledge resources</p>
+        </div>
+    </section>
+    
+    <!-- Featured Course -->
+    <section class="section">
+        <div class="container">
+            <div class="featured-product fade-in">
+                <div class="featured-product-image">
+                    <img src="images/DALL%C2%B7E2025-02-0412.54.47-Asurrealandhighlydetailedwide-angleillustrationrepresenting%27thematrix%27asanillusive%252Cinvisiblesystemofcontrol.Theimagefeaturesapers.webp" alt="Escaping the Matrix: Foundational Course">
+                </div>
+                <div class="featured-product-content">
+                    <span class="product-tag">Featured Course</span>
+                    <h2>Escaping the Matrix: Foundational Course</h2>
+                    <div class="product-price">$97</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(12 reviews)</span>
+                    </div>
+                    <p>Begin your journey beyond the illusion with this comprehensive foundational course. Learn the essential techniques to recognize and transcend the matrix that surrounds us.</p>
+                    <div class="product-features">
+                        <h3>What You'll Learn:</h3>
+                        <ul class="featured-list">
+                            <li>Understand the nature of reality constructs</li>
+                            <li>Master energy clearing techniques</li>
+                            <li>Develop heightened awareness and perception</li>
+                            <li>Access downloadable resources and guided meditations</li>
+                            <li>Lifetime access to course updates</li>
+                        </ul>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary add-to-cart" data-id="course-001" data-name="Escaping the Matrix: Foundational Course" data-price="97" data-type="Course">Add to Cart</button>
+                        <a href="course-details.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Filter -->
+    <section class="section">
+        <div class="container">
+            <div class="products-filter">
+                <div class="filter-categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li class="active"><a href="#" data-filter="all">All Products</a></li>
+                        <li><a href="#" data-filter="course">Courses</a></li>
+                        <li><a href="#" data-filter="ebook">E-Books</a></li>
+                        <li><a href="#" data-filter="meditation">Meditations</a></li>
+                    </ul>
+                </div>
+                <div class="filter-sort">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select" class="form-control">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="product-grid">
+                <!-- Course Item -->
+                <div class="product-card fade-in" data-category="course">
+                    <div class="product-image">
+                        <img src="images/DALL%C2%B7E2024-10-2414.40.38-Asleek%252Ccosmic-themedimagewiththethemeofexitingthematrixandparadigmshift%252Cfeaturingabstractvisualsofbreakingfreefromlimitations%252Cfu.webp" alt="Escaping the Matrix: Foundational Course">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-type">Course</span>
+                        <h3 class="product-title">Escaping the Matrix: Foundational Course</h3>
+                        <p class="product-description">Begin your journey beyond the illusion with this comprehensive foundational course.</p>
+                        <div class="product-price">$97</div>
+                        <button class="btn btn-primary add-to-cart" data-id="course-001" data-name="Escaping the Matrix: Foundational Course" data-price="97" data-type="Course">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- E-Book Item -->
+                <div class="product-card fade-in" data-category="ebook">
+                    <div class="product-image">
+                        <img src="images/DALL%C2%B7E2024-10-2414.43.28-Asleek%252Ccosmic-themedimagewiththethemeofexitingthematrixandparadigmshift%252Cfeaturingabstractvisualsofbreakingfreefromlimitations%252Cfu.webp" alt="Beyond the Veil: Seeing Reality">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-type">E-Book</span>
+                        <h3 class="product-title">Beyond the Veil: Seeing Reality</h3>
+                        <p class="product-description">A comprehensive guide to piercing the veil of illusion and perceiving true reality.</p>
+                        <div class="product-price">$24.99</div>
+                        <button class="btn btn-primary add-to-cart" data-id="ebook-001" data-name="Beyond the Veil: Seeing Reality" data-price="24.99" data-type="E-Book">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Meditation Item -->
+                <div class="product-card fade-in" data-category="meditation">
+                    <div class="product-image">
+                        <img src="images/Apersonsittinginmeditationonacushion%252Cclearingunwantedmorphicfields%252Csoftdisruptiveenergyaround%252Cglowingpeacefullightfromthecenter%252C.webp" alt="Energy Clearing Meditation Series">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-type">Meditation</span>
+                        <h3 class="product-title">Energy Clearing Meditation Series</h3>
+                        <p class="product-description">A collection of guided meditations designed to clear unwanted energetic attachments.</p>
+                        <div class="product-price">$39.99</div>
+                        <button class="btn btn-primary add-to-cart" data-id="meditation-001" data-name="Energy Clearing Meditation Series" data-price="39.99" data-type="Meditation">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- E-Book Item -->
+                <div class="product-card fade-in" data-category="ebook">
+                    <div class="product-image">
+                        <img src="images/DALL%C2%B7E2024-10-2414.41.21-Asleek%252Ccosmic-themedendcardwiththethemeofexitingthematrixandparadigmshift%252Cfeaturingabstractvisualsofbreakingfreefromlimitations%252C.webp" alt="The Quantum Self: Identity Beyond the Matrix">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-type">E-Book</span>
+                        <h3 class="product-title">The Quantum Self: Identity Beyond the Matrix</h3>
+                        <p class="product-description">Explore the quantum nature of consciousness and discover your true identity.</p>
+                        <div class="product-price">$19.99</div>
+                        <button class="btn btn-primary add-to-cart" data-id="ebook-002" data-name="The Quantum Self: Identity Beyond the Matrix" data-price="19.99" data-type="E-Book">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Course Item (Coming Soon) -->
+                <div class="product-card fade-in product-coming-soon" data-category="course">
+                    <div class="product-image">
+                        <img src="images/DALL%C2%B7E2024-10-2416.05.15-Asleek%252Ccosmic-themedimagewiththethemeofexitingthematrixandparadigmshift%252Cfeaturingabstractvisualsofbreakingfreefromlimitations%252Cfu.webp" alt="Advanced Matrix Navigation">
+                        <div class="coming-soon-overlay">
+                            <span>Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-type">Course</span>
+                        <h3 class="product-title">Advanced Matrix Navigation</h3>
+                        <p class="product-description">For those who have completed the foundational course, take your practice to the next level.</p>
+                        <div class="product-price">$149</div>
+                        <button class="btn btn-secondary notify-me">Notify Me</button>
+                    </div>
+                </div>
+                
+                <!-- Meditation Item -->
+                <div class="product-card fade-in" data-category="meditation">
+                    <div class="product-image">
+                        <img src="images/Humanfiguressurroundedbywarmgoldenglowinglight%252Cluminousetherealangelsinthebackgroundofferingguidance%252Cancestralpresences%252Cgoldentones.webp" alt="Ancestral Connection Meditation">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-type">Meditation</span>
+                        <h3 class="product-title">Ancestral Connection Meditation</h3>
+                        <p class="product-description">Connect with ancestral wisdom and guidance through this powerful meditation series.</p>
+                        <div class="product-price">$29.99</div>
+                        <button class="btn btn-primary add-to-cart" data-id="meditation-002" data-name="Ancestral Connection Meditation" data-price="29.99" data-type="Meditation">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bundle Offer -->
+    <section class="section">
+        <div class="container">
+            <div class="bundle-offer fade-in">
+                <div class="bundle-content">
+                    <h2>Complete Paradigm Shift Bundle</h2>
+                    <p class="bundle-description">Get everything you need to fully escape the matrix and shift your paradigm with this comprehensive bundle.</p>
+                    <div class="bundle-price">
+                        <div class="original-price">$187.97</div>
+                        <div class="sale-price">$149</div>
+                        <div class="save-amount">Save $38.97</div>
+                    </div>
+                    <div class="bundle-includes">
+                        <h3>Bundle Includes:</h3>
+                        <ul class="bundle-list">
+                            <li>Escaping the Matrix: Foundational Course ($97)</li>
+                            <li>Beyond the Veil: Seeing Reality E-Book ($24.99)</li>
+                            <li>Energy Clearing Meditation Series ($39.99)</li>
+                            <li>The Quantum Self: Identity Beyond the Matrix E-Book ($19.99)</li>
+                            <li>Bonus: Private Community Access (Valued at $99)</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary add-to-cart" data-id="bundle-001" data-name="Complete Paradigm Shift Bundle" data-price="149" data-type="Bundle">Add Bundle to Cart</button>
+                </div>
+                <div class="bundle-image">
+                    <img src="images/cosmicenergyflowingaround%252Clayersofsubtleinterference%252Csoftbutdisruptiveenergy.webp" alt="Complete Paradigm Shift Bundle">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">What Our Students Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial fade-in">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Escaping the Matrix course completely transformed my perception of reality. I now see through the illusions that once limited me and feel a profound sense of freedom."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Sarah K.</div>
+                            <div class="author-title">Consciousness Explorer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The Energy Clearing Meditation Series helped me release years of accumulated energetic baggage. I feel lighter, clearer, and more connected to my true essence."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Michael T.</div>
+                            <div class="author-title">Energy Worker</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Beyond the Veil is the most comprehensive guide to seeing through the matrix that I've ever encountered. The practical exercises and insights are invaluable."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Jennifer L.</div>
+                            <div class="author-title">Spiritual Seeker</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>How do I access my courses after purchase?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After completing your purchase, you'll receive an email with login instructions. You can access all your courses and materials through your account dashboard on our website.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Are the courses self-paced?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our courses are completely self-paced. You can progress through the material at your own speed and revisit any lessons as often as you like. You'll have lifetime access to the course content.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>What format are the e-books available in?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our e-books are available in PDF, EPUB, and MOBI formats, making them compatible with virtually all devices including Kindle, iPad, and other e-readers.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Do you offer refunds?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer a 30-day satisfaction guarantee. If you're not completely satisfied with your purchase, you can request a full refund within 30 days. Please see our <a href="refund.html">Refund Policy</a> for more details.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        <h3>Is there any support available if I have questions?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! All our courses include access to our community forum where you can ask questions and connect with other students. For premium courses, you'll also have direct email support from our instructors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="section">
+        <div class="container">
+            <div class="newsletter-box fade-in">
+                <h2>Get Notified About New Courses</h2>
+                <p>Subscribe to our newsletter to receive updates when new courses and books are released.</p>
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your email address" required="">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="SHIFT IN PARADIGMS Logo">
+            </div>
+            
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Home</a></li>
+                        <li class="footer-link"><a href="vlog.html">Vlog</a></li>
+                        <li class="footer-link"><a href="courses.html">Courses &amp; Books</a></li>
+                        <li class="footer-link"><a href="forum.html">Community</a></li>
+                        <li class="footer-link"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Account</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="login.html">Login</a></li>
+                        <li class="footer-link"><a href="register.html">Register</a></li>
+                        <li class="footer-link"><a href="account.html">My Account</a></li>
+                        <li class="footer-link"><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="terms.html">Terms &amp; Conditions</a></li>
+                        <li class="footer-link"><a href="privacy.html">Privacy Policy</a></li>
+                        <li class="footer-link"><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <p>Follow us on social media for daily insights and updates.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/shiftinparadigms" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/thenergywhisperer/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 SHIFT IN PARADIGMS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/paypal-integration.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const toggle = item.querySelector('.faq-toggle');
+                
+                question.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                            otherItem.querySelector('.faq-toggle i').className = 'fas fa-plus';
+                        }
+                    });
+                    
+                    item.classList.toggle('active');
+                    
+                    if (item.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        toggle.querySelector('i').className = 'fas fa-minus';
+                    } else {
+                        answer.style.maxHeight = null;
+                        toggle.querySelector('i').className = 'fas fa-plus';
+                    }
+                });
+            });
+            
+            // Product Filtering
+            const filterLinks = document.querySelectorAll('.filter-categories a');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            filterLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    filterLinks.forEach(l => l.parentElement.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.parentElement.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    productCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Add to Cart Functionality
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.getAttribute('data-id');
+                    const productName = this.getAttribute('data-name');
+                    const productPrice = parseFloat(this.getAttribute('data-price'));
+                    const productType = this.getAttribute('data-type');
+                    
+                    // Add to cart logic (simplified for demo)
+                    addToCart({
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                        type: productType,
+                        quantity: 1
+                    });
+                    
+                    // Update cart count
+                    updateCartCount();
+                    
+                    // Show confirmation
+                    showNotification(`${productName} added to cart!`);
+                });
+            });
+            
+            // Notify Me Functionality
+            const notifyButtons = document.querySelectorAll('.notify-me');
+            
+            notifyButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productTitle = this.closest('.product-card').querySelector('.product-title').textContent;
+                    
+                    // Show notification form (simplified for demo)
+                    showNotificationForm(productTitle);
+                });
+            });
+            
+            // Helper Functions (simplified for demo)
+            function addToCart(product) {
+                // Use the shopping cart from PayPal integration
+                if (typeof shoppingCart !== 'undefined') {
+                    shoppingCart.addItem(product.id, product.name, product.price, product.type, product.quantity);
+                } else {
+                    // Fallback to localStorage if PayPal integration not loaded
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    
+                    // Check if product already in cart
+                    const existingProductIndex = cart.findIndex(item => item.id === product.id);
+                    
+                    if (existingProductIndex > -1) {
+                        cart[existingProductIndex].quantity += product.quantity;
+                    } else {
+                        cart.push(product);
+                    }
+                    
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                }
+            }
+            
+            function updateCartCount() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+                
+                document.querySelector('.cart-count').textContent = cartCount;
+            }
+            
+            function showNotification(message) {
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = 'notification';
+                notification.textContent = message;
+                
+                // Add to body
+                document.body.appendChild(notification);
+                
+                // Show notification
+                setTimeout(() => {
+                    notification.classList.add('show');
+                }, 100);
+                
+                // Hide and remove notification
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                }, 3000);
+            }
+            
+            function showNotificationForm(productTitle) {
+                // Create form overlay
+                const overlay = document.createElement('div');
+                overlay.className = 'form-overlay';
+                
+                const formContainer = document.createElement('div');
+                formContainer.className = 'notification-form';
+                
+                formContainer.innerHTML = `
+                    <h3>Get Notified</h3>
+                    <p>We'll let you know when "${productTitle}" becomes available.</p>
+                    <form id="notify-form">
+                        <div class="form-group">
+                            <label for="notify-email">Email Address</label>
+                            <input type="email" id="notify-email" class="form-control" required>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Notify Me</button>
+                            <button type="button" class="btn btn-secondary cancel-btn">Cancel</button>
+                        </div>
+                    </form>
+                `;
+                
+                overlay.appendChild(formContainer);
+                document.body.appendChild(overlay);
+                
+                // Show overlay
+                setTimeout(() => {
+                    overlay.classList.add('show');
+                }, 100);
+                
+                // Handle form submission
+                const form = overlay.querySelector('#notify-form');
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = this.querySelector('#notify-email').value;
+                    
+                    // Process notification request (simplified for demo)
+                    console.log(`Notification request for "${productTitle}" from ${email}`);
+                    
+                    // Hide and remove overlay
+                    overlay.classList.remove('show');
+                    setTimeout(() => {
+                        document.body.removeChild(overlay);
+                    }, 300);
+                    
+                    // Show confirmation
+                    showNotification(`You'll be notified when "${productTitle}" becomes available!`);
+                });
+                
+                // Handle cancel button
+                const cancelBtn = overlay.querySelector('.cancel-btn');
+                cancelBtn.addEventListener('click', function() {
+                    overlay.classList.remove('show');
+                    setTimeout(() => {
+                        document.body.removeChild(overlay);
+                    }, 300);
+                });
+            }
+            
+            // Initialize cart count on page load
+            updateCartCount();
+        });
+    </script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'rulmkeka',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			usageStatus : 'UsageStatus_Unknown',
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-DPV-_I11.js" async=""></script><script defer="" data-domain="manus.space" src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script>
+
+</body></html>

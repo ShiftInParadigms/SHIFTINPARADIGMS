@@ -1,0 +1,108 @@
+/* Legal Pages Specific Styles */
+
+/* Container for legal content */
+.legal-content {
+  background: rgba(11, 11, 43, 0.6);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  border: 1px solid rgba(230, 181, 74, 0.2);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section headings */
+.legal-content h2 {
+  color: var(--golden-energy);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgba(230, 181, 74, 0.2);
+  padding-bottom: var(--spacing-sm);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  color: var(--celestial-light-blue);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.4rem;
+}
+
+/* Paragraphs */
+.legal-content p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.7;
+}
+
+/* Lists */
+.legal-content ul,
+.legal-content ol {
+  margin: 0 0 var(--spacing-lg) 2rem;
+  padding-left: 0;
+}
+
+.legal-content li {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.7;
+}
+
+/* Fix for bullet points alignment */
+.legal-content ul li {
+  position: relative;
+  list-style-position: outside;
+}
+
+.legal-content ol li {
+  position: relative;
+  list-style-position: outside;
+}
+
+/* Links in legal content */
+.legal-content a {
+  color: var(--celestial-light-blue);
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.legal-content a:hover {
+  color: var(--golden-energy);
+}
+
+/* Strong text emphasis */
+.legal-content strong {
+  color: var(--golden-energy);
+  font-weight: 600;
+}
+
+/* Last updated text */
+.legal-content .text-center {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  color: rgba(248, 247, 255, 0.7);
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(230, 181, 74, 0.2);
+  padding-top: var(--spacing-lg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .legal-content {
+    padding: var(--spacing-lg);
+  }
+  
+  .legal-content ul,
+  .legal-content ol {
+    margin-left: 1.5rem;
+  }
+  
+  .legal-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .legal-content h3 {
+    font-size: 1.3rem;
+  }
+}
