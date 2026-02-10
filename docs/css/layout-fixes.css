@@ -98,15 +98,17 @@ body > * {
     z-index: 1001;
     position: relative;
     background: rgba(10, 10, 26, 0.8);
-    padding: 6px 12px;
-    border-radius: 8px;
+    padding: 2px 5px;
+    border-radius: 4px;
     flex-shrink: 0;
     text-decoration: none;
-    gap: 12px;
+    gap: 4px;
+    max-width: 130px;
 }
 
 .header .logo img {
-    max-height: 52px;
+    max-height: 18px !important;
+    max-width: 44px !important;
     width: auto;
     object-fit: contain;
     display: block;
@@ -115,7 +117,7 @@ body > * {
 .header .logo-text {
     position: relative;
     z-index: 2;
-    font-size: 1.2rem;
+    font-size: 0.65rem;
     font-weight: 600;
     color: #e8e8e8;
     white-space: nowrap;
@@ -199,4 +201,9 @@ body > * {
 .legal-content ul li,
 .legal-content ol li {
     margin-bottom: 10px;
+}
+
+/* Hide square header logo on non-home pages (courses, about, forum, login, etc.) for now */
+body .header .container .navbar .logo {
+    display: none !important;
 }

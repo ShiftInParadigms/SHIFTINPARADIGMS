@@ -123,22 +123,22 @@ header {
     overflow: hidden;
 }
 
-/* Logo in header (courses, about, forum, etc.) – keep contained, never overlap nav */
+/* Logo in header (courses, about, forum, etc.) – very small, never block content */
 header .logo {
     display: inline-flex;
     align-items: center;
     flex-shrink: 0;
-    gap: 10px;
-    padding: 6px 10px;
+    gap: 4px;
+    padding: 2px 5px;
     background: rgba(10, 10, 26, 0.9);
-    border-radius: 8px;
+    border-radius: 4px;
     text-decoration: none;
-    max-width: 280px;
+    max-width: 130px;
 }
 
 header .logo img {
-    max-height: 48px !important;
-    max-width: 120px !important;
+    max-height: 18px !important;
+    max-width: 44px !important;
     width: auto !important;
     height: auto !important;
     object-fit: contain !important;
@@ -146,7 +146,7 @@ header .logo img {
 }
 
 header .logo .logo-text {
-    font-size: 1.1rem;
+    font-size: 0.65rem;
     font-weight: 600;
     color: #e8e8e8;
     white-space: nowrap;

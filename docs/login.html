@@ -9,29 +9,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="images/logo.png">
     <style>
-        /* Fix logo positioning on login page */
-        .logo {
+        /* Header logo – small so it doesn't block content */
+        .header .logo {
             position: relative;
             z-index: 1001;
             background: rgba(10, 10, 26, 0.9);
-            padding: 5px 10px;
-            border-radius: 5px;
+            padding: 2px 5px;
+            border-radius: 4px;
             display: flex;
             align-items: center;
+            gap: 4px;
+            max-width: 130px;
         }
         
-        .logo img {
-            height: 40px;
-            margin-right: 10px;
+        .header .logo img {
+            max-height: 18px !important;
+            max-width: 44px !important;
+            height: auto !important;
+            width: auto !important;
+            margin-right: 4px;
             position: relative;
             z-index: 1002;
+            object-fit: contain;
         }
         
-        .logo-text {
-            font-family: 'Dancing Script', cursive;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #d4af37;
+        .header .logo .logo-text {
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: #e8e8e8;
             position: relative;
             z-index: 1002;
         }
