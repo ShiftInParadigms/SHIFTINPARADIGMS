@@ -41,16 +41,17 @@
     animation: pulseGlow 15s infinite alternate, moveBackground 60s infinite alternate;
 }
 
-/* Sacred Geometry Elements */
+/* Sacred Geometry Elements – decorative only, don't block content */
 .sacred-geometry {
     position: fixed;
-    width: 300px;
-    height: 300px;
+    width: 140px;
+    height: 140px;
     background: url('../images/DALL%C3%82%C2%B7E2024-10-2414.41.21-Asleek%2Ccosmic-themedendcardwiththethemeofexitingthematrixandparadigmshift%2Cfeaturingabstractvisualsofbreakingfreefromlimitations%2C.webp');
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.15;
+    opacity: 0.12;
     z-index: -1;
+    pointer-events: none;
     animation: rotateGeometry 120s infinite linear;
 }
 

@@ -85,20 +85,57 @@ body > * {
     transition: transform 0.3s ease;
 }
 
-/* Fix logo positioning on login page */
-.logo {
+/* Header: when navbar has logo (courses, about, etc.) – keep logo large but contained */
+.header .navbar:has(.logo) {
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.header .logo {
     display: flex;
     align-items: center;
     z-index: 1001;
     position: relative;
     background: rgba(10, 10, 26, 0.8);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    flex-shrink: 0;
+    text-decoration: none;
+    gap: 12px;
 }
 
-.logo-text {
+.header .logo img {
+    max-height: 52px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.header .logo-text {
     position: relative;
     z-index: 2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e8e8e8;
+    white-space: nowrap;
+}
+
+.header .navbar:has(.logo) .nav-menu {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+/* Page header (banner under nav) – prevent overlap and oversized title */
+.page-header {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    line-height: 1.2;
 }
 
 /* Ensure proper centring on mobile */

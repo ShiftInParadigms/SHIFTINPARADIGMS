@@ -120,6 +120,51 @@ header {
     left: 0;
     right: 0;
     z-index: 1000;
+    overflow: hidden;
+}
+
+/* Logo in header (courses, about, forum, etc.) – keep contained, never overlap nav */
+header .logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 10px;
+    padding: 6px 10px;
+    background: rgba(10, 10, 26, 0.9);
+    border-radius: 8px;
+    text-decoration: none;
+    max-width: 280px;
+}
+
+header .logo img {
+    max-height: 48px !important;
+    max-width: 120px !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+}
+
+header .logo .logo-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e8e8e8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Navbar with logo: logo left, menu right (courses, about, forum, etc.) */
+header .navbar:has(.logo) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+header .navbar:has(.logo) .nav-menu {
+    flex-shrink: 0;
 }
 
 /* Brand Bar */
@@ -208,8 +253,6 @@ header {
     color: #d4af37;
     background: rgba(212, 175, 55, 0.15);
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
-}55, 215, 0, 0.1);
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
 .nav-link.active::after {
@@ -1571,4 +1614,13 @@ header {
     .cart-item-actions {
         margin-top: 10px;
     }
+}
+
+/* Hide "Made with Manus" badge (script removed from HTML; fallback if still visible) */
+manus-content-root,
+iframe[src*="manus"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
 }
