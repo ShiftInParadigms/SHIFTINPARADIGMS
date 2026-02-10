@@ -1,0 +1,12 @@
+{
+  "name": "shift-in-paradigms-website",
+  "version": "1.0.0",
+  "description": "Static clone of SHIFT IN PARADIGMS website for GitHub",
+  "type": "module",
+  "scripts": {
+    "clone": "node clone-site.js"
+  },
+  "dependencies": {
+    "website-scraper": "^6.0.0"
+  }
+}

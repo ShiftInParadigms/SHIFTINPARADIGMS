@@ -1,0 +1,356 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SHIFT IN PARADIGMS</title>
+    <meta name="description" content="Login to your SHIFT IN PARADIGMS account to access your courses and books.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/layout-fixes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <style>
+        /* Fix logo positioning on login page */
+        .logo {
+            position: relative;
+            z-index: 1001;
+            background: rgba(10, 10, 26, 0.9);
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+            position: relative;
+            z-index: 1002;
+        }
+        
+        .logo-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #d4af37;
+            position: relative;
+            z-index: 1002;
+        }
+        
+        /* Improve auth container layout */
+        .auth-container {
+            display: flex;
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(30, 30, 60, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .auth-form-container {
+            flex: 1;
+            padding: 40px;
+        }
+        
+        .auth-image {
+            flex: 1;
+            position: relative;
+            display: none;
+        }
+        
+        .auth-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .auth-image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 10, 26, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .auth-image-content {
+            text-align: center;
+            color: #fff;
+        }
+        
+        .auth-image-content h2 {
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+        
+        .auth-section {
+            padding-top: 120px;
+        }
+        
+        @media (min-width: 768px) {
+            .auth-image {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cosmic Particles Background -->
+    <div class="cosmic-particles"></div>
+    
+    <!-- Static Layer -->
+    <div class="cosmic-static"></div>
+    
+    <!-- Animated Layer -->
+    <div class="cosmic-animated"></div>
+    
+    <!-- Sacred Geometry Elements -->
+    <div class="sacred-geometry top-left"></div>
+    <div class="sacred-geometry bottom-right"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="SHIFT IN PARADIGMS Logo">
+                    <span class="logo-text">SHIFT IN PARADIGMS</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="vlog.html" class="nav-link">Vlog</a></li>
+                    <li class="nav-item"><a href="courses.html" class="nav-link">Courses &amp; Books</a></li>
+                    <li class="nav-item"><a href="forum.html" class="nav-link">Community</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link auth-link active">Login</a></li>
+                    <li class="nav-item">
+                        <div class="user-menu" style="display: none;">
+                            <a href="account.html" class="nav-link">
+                                <span class="user-name">User</span>
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link cart-link">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Login Section -->
+    <section class="section auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form-container">
+                    <h1>Welcome Back</h1>
+                    <p>Login to access your courses, books, and community features</p>
+                    
+                    <form id="login-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" required="">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="password-input">
+                                <input type="password" id="password" name="password" class="form-control" required="">
+                                <button type="button" class="toggle-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember" name="remember">
+                                <label for="remember">Remember me</label>
+                            </div>
+                            <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        
+                        <div class="form-error" style="display: none;"></div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                    
+                    <div class="auth-separator">
+                        <span>or</span>
+                    </div>
+                    
+                    <div class="social-auth">
+                        <button class="btn btn-secondary btn-block">
+                            <i class="fab fa-google"></i> Continue with Google
+                        </button>
+                        <button class="btn btn-secondary btn-block">
+                            <i class="fab fa-facebook-f"></i> Continue with Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        <p>Don't have an account? <a href="register.html">Create Account</a></p>
+                    </div>
+                </div>
+                
+                <div class="auth-image">
+                    <img src="images/Aserenespiritualsettingwithapersonsittinginameditativeposesurroundedbyglowingenergysymbolsandabackdropofabstractcosmicelements.webp" alt="Spiritual Meditation">
+                    <div class="auth-image-overlay">
+                        <div class="auth-image-content">
+                            <h2>Begin Your Journey</h2>
+                            <p>"The first step in escaping the matrix is recognising that you are in it."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="SHIFT IN PARADIGMS Logo">
+            </div>
+            
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="index.html">Home</a></li>
+                        <li class="footer-link"><a href="vlog.html">Vlog</a></li>
+                        <li class="footer-link"><a href="courses.html">Courses &amp; Books</a></li>
+                        <li class="footer-link"><a href="forum.html">Community</a></li>
+                        <li class="footer-link"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Account</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="login.html">Login</a></li>
+                        <li class="footer-link"><a href="register.html">Register</a></li>
+                        <li class="footer-link"><a href="account.html">My Account</a></li>
+                        <li class="footer-link"><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="terms.html">Terms &amp; Conditions</a></li>
+                        <li class="footer-link"><a href="privacy.html">Privacy Policy</a></li>
+                        <li class="footer-link"><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect</h4>
+                    <p>Follow us on social media for daily insights and updates.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/shiftinparadigms" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/thenergywhisperer/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 SHIFT IN PARADIGMS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle password visibility
+            const togglePassword = document.querySelector('.toggle-password');
+            const passwordInput = document.querySelector('#password');
+            
+            if (togglePassword) {
+                togglePassword.addEventListener('click', function() {
+                    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                    passwordInput.setAttribute('type', type);
+                    
+                    // Toggle icon
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('fa-eye');
+                    icon.classList.toggle('fa-eye-slash');
+                });
+            }
+            
+            // Form submission
+            const loginForm = document.getElementById('login-form');
+            
+            if (loginForm) {
+                loginForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = this.querySelector('input[name="email"]').value;
+                    const password = this.querySelector('input[name="password"]').value;
+                    
+                    // Simulate login (in a real app, this would make an API call)
+                    userAuth.login(email, password)
+                        .then(() => {
+                            // Redirect to account page
+                            window.location.href = 'account.html';
+                        })
+                        .catch(error => {
+                            // Show error message
+                            const errorMessage = document.querySelector('.form-error');
+                            if (errorMessage) {
+                                errorMessage.textContent = error.message;
+                                errorMessage.style.display = 'block';
+                            }
+                        });
+                });
+            }
+        });
+    </script>
+<manus-content-root></manus-content-root><script>
+			var __manus_space_editor_info = {
+			spaceId : 'rulmkeka',
+			patchList : [],
+			hideBadge : false,
+			sessionId : '',
+			isWebDev : false,
+			usageStatus : 'UsageStatus_Unknown',
+			};
+			var __manus__global_env = {
+				apiHost: 'https://api.manus.im',
+				host: 'https://manus.im',
+				amplitudeKey: '46ac3f9abb41dd2d17a5785e052bc6d3',
+			};
+			</script><script src="https://files.manuscdn.com/manus-space-dispatcher/spaceEditor-DPV-_I11.js" async=""></script><script defer="" data-domain="manus.space" src="https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js"></script>
+		<script>
+			window.plausible =
+				window.plausible ||
+				function () {
+					(window.plausible.q = window.plausible.q || []).push(arguments);
+				};
+			plausible('custom-pageview', {
+			  props: {
+    			domain: window.location.host
+  			}
+			})
+		</script>
+
+</body></html>

@@ -1,0 +1,149 @@
+/* Enhanced Animation Styles for Shifting Paradigms */
+
+/* Cosmic Particles Background */
+.cosmic-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/cosmicenergyflowingaround%252Clayersofsubtleinterference%252Csoftbutdisruptiveenergy.webp');
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -3;
+    animation: floatParticles 120s infinite linear;
+}
+
+/* Static Background Layer */
+.cosmic-static {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/showcasescrispandintricat.webp');
+    background-size: cover;
+    opacity: 0.15;
+    z-index: -2;
+}
+
+/* Animated Layer with Movement */
+.cosmic-animated {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/DALL%C3%82%C2%B7E2024-10-2414.40.38-Asleek%2Ccosmic-themedimagewiththethemeofexitingthematrixandparadigmshift%2Cfeaturingabstractvisualsofbreakingfreefromlimitations%2Cfu.webp');
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+    animation: pulseGlow 15s infinite alternate, moveBackground 60s infinite alternate;
+}
+
+/* Sacred Geometry Elements */
+.sacred-geometry {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: url('../images/DALL%C3%82%C2%B7E2024-10-2414.41.21-Asleek%2Ccosmic-themedendcardwiththethemeofexitingthematrixandparadigmshift%2Cfeaturingabstractvisualsofbreakingfreefromlimitations%2C.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: -1;
+    animation: rotateGeometry 120s infinite linear;
+}
+
+.sacred-geometry.top-left {
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+}
+
+.sacred-geometry.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom right;
+}
+
+/* Hero Background */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/%27asanillusive%2Cinvisiblesystemofcontrol.Theimagefeaturesapers.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    z-index: -1;
+    animation: zoomEffect 30s infinite alternate;
+}
+
+/* Animation Keyframes */
+@keyframes floatParticles {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes pulseGlow {
+    0% {
+        opacity: 0.1;
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        opacity: 0.25;
+        filter: hue-rotate(30deg);
+    }
+    100% {
+        opacity: 0.15;
+        filter: hue-rotate(0deg);
+    }
+}
+
+@keyframes moveBackground {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(5%) translateY(-5%);
+    }
+    50% {
+        transform: translateX(-5%) translateY(5%);
+    }
+    75% {
+        transform: translateX(5%) translateY(5%);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+@keyframes rotateGeometry {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
