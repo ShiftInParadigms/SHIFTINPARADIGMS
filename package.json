@@ -4,7 +4,9 @@
   "description": "Static clone of SHIFT IN PARADIGMS website for GitHub",
   "type": "module",
   "scripts": {
-    "clone": "node clone-site.js"
+    "clone": "node clone-site.js",
+    "preview": "npx serve website -p 3000",
+    "preview:docs": "npx serve docs -p 3001"
   },
   "dependencies": {
     "website-scraper": "^6.0.0"
