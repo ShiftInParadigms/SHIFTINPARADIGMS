@@ -3,15 +3,12 @@
  * This script handles PayPal payment processing for courses, books, and other products
  */
 
-// PayPal configuration
+// PayPal configuration (client ID and env come from paypal-config.js – never commit secrets)
 const paypalConfig = {
-    // PayPal client ID for production
-    clientId: 'AV31Z6zm0WjOo8BMXISH9QzpkJMgBQjvdstSslbuhz7jzj-z24hwfihyH60gq7My4J4kegDNQHA3PN44',
-    currency: 'AUD', // Australian Dollar
+    clientId: typeof window.PAYPAL_CLIENT_ID !== 'undefined' ? window.PAYPAL_CLIENT_ID : '',
+    currency: typeof window.PAYPAL_CURRENCY !== 'undefined' ? window.PAYPAL_CURRENCY : 'AUD',
     intent: 'capture',
-    
-    // Environment setting - 'sandbox' for testing, 'production' for live
-    environment: 'production'
+    environment: typeof window.PAYPAL_ENVIRONMENT !== 'undefined' ? window.PAYPAL_ENVIRONMENT : 'production'
 };
 
 // Cart management

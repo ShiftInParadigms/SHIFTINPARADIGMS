@@ -15,5 +15,12 @@ Thumbs.db
 *.log
 npm-debug.log*
 
+# Environment and secrets (never commit)
+.env
+.env.*
+.env.local
+.env.*.local
+**/paypal-config.js
+
 # Optional: uncomment to avoid committing the cloned site (e.g. if you clone on CI)
 # website/
